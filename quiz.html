@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de Feitiços - HP Curiosidades</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Cinzel+Decorative:wght@400;700;900&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&family=IM+Fell+English+SC&family=Pinyon+Script&family=Uncial+Antiqua&family=EB+Garamond:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+</head>
+<body>
+    <!-- Cronômetro Flutuante -->
+    <div id="timer-flutuante">02:00</div>
+
+    <header class="cabecalho anime-fade">
+        <h1>Teste seus Conhecimentos</h1>
+        <h2 class="fonte-antiga">N.O.M.s em Feitiços</h2>
+        <p class="fonte-manuscrita">Prepare sua pena e pergaminho, é hora de provar seu valor bruxo.</p>
+        
+        <nav class="nav-rodape" style="margin-top: 20px;">
+            <a href="index.html">Início</a> • 
+            <a href="personagens.html">Personagens</a> • 
+            <a href="feiticos.html">Feitiços</a>
+        </nav>
+        <br>
+        <a href="index.html" class="botao-magico">Voltar para Início</a>
+    </header>
+
+    <main>
+        <section class="anime-fade visible">
+            <div class="quiz-container">
+                <form id="quiz-form">
+                    
+                    <!-- SEÇÃO FÁCIL -->
+                    <h2 class="fonte-runas" style="border-bottom: 1px solid #ffb700; padding-top: 20px;">Nível 1: Aprendiz (Fácil)</h2>
+                    
+                    <!-- Pergunta 1 -->
+                    <div class="question-block">
+                        <h3 class="fonte-runas">1. Qual é o feitiço de desarmamento?</h3>
+                        <label><input type="radio" name="q1" value="a"> Avada Kedavra</label>
+                        <label id="lbl-q1-b"><input type="radio" name="q1" value="b"> Expelliarmus</label>
+                        <label><input type="radio" name="q1" value="c"> Accio</label>
+                    </div>
+
+                    <!-- Pergunta 2 -->
+                    <div class="question-block">
+                        <h3 class="fonte-runas">2. O que o feitiço "Alohomora" faz?</h3>
+                        <label id="lbl-q2-a"><input type="radio" name="q2" value="a"> Destranca portas</label>
+                        <label><input type="radio" name="q2" value="b"> Levita objetos</label>
+                        <label><input type="radio" name="q2" value="c"> Cria luz</label>
+                    </div>
+
+                    <!-- Pergunta 3 -->
+                    <div class="question-block">
+                        <h3 class="fonte-runas">3. Qual animal é usado para entregar correio no mundo bruxo?</h3>
+                        <label><input type="radio" name="q3" value="a"> Gato</label>
+                        <label id="lbl-q3-b"><input type="radio" name="q3" value="b"> Coruja</label>
+                        <label><input type="radio" name="q3" value="c"> Sapo</label>
+                    </div>
+
+                    <!-- Pergunta 4 -->
+                    <div class="question-block">
+                        <h3 class="fonte-runas">4. "Wingardium Leviosa" serve para:</h3>
+                        <label><input type="radio" name="q4" value="a"> Explodir coisas</label>
+                        <label><input type="radio" name="q4" value="b"> Fazer voar em vassoura</label>
+                        <label id="lbl-q4-c"><input type="radio" name="q4" value="c"> Levitar objetos</label>
+                    </div>
+
+                    <!-- Pergunta 5 -->
+                    <div class="question-block">
+                        <h3 class="fonte-runas">5. Qual é a cor do feitiço "Expelliarmus"?</h3>
+                        <label id="lbl-q5-a"><input type="radio" name="q5" value="a"> Vermelho</label>
+                        <label><input type="radio" name="q5" value="b"> Verde</label>
+                        <label><input type="radio" name="q5" value="c"> Azul</label>
+                    </div>
+
+                    <!-- SEÇÃO MÉDIA -->
+                    <h2 class="fonte-runas" style="border-bottom: 1px solid #ffb700; padding-top: 20px;">Nível 2: Monitor (Médio)</h2>
+
+                    <!-- Pergunta 6 -->
+                    <div class="question-block">
+                        <h3 class="fonte-runas">6. Qual destes é uma Maldição Imperdoável?</h3>
+                        <label><input type="radio" name="q6" value="a"> Sectumsempra</label>
+                        <label id="lbl-q6-b"><input type="radio" name="q6" value="b"> Crucio</label>
+                        <label><input type="radio" name="q6" value="c"> Stupefy</label>
+                    </div>
+
+                    <!-- Pergunta 7 -->
+                    <div class="question-block">
+                        <h3 class="fonte-runas">7. O que acalma o Fofo (Cão de três cabeças)?</h3>
+                        <label><input type="radio" name="q7" value="a"> Comida</label>
+                        <label id="lbl-q7-b"><input type="radio" name="q7" value="b"> Música</label>
+                        <label><input type="radio" name="q7" value="c"> Escuridão</label>
+                    </div>
+
+                    <!-- Pergunta 8 -->
+                    <div class="question-block">
+                        <h3 class="fonte-runas">8. Qual o contra-feitiço para "Lumos"?</h3>
+                        <label><input type="radio" name="q8" value="a"> Apagous</label>
+                        <label id="lbl-q8-b"><input type="radio" name="q8" value="b"> Nox</label>
+                        <label><input type="radio" name="q8" value="c"> Obscuro</label>
+                    </div>
+
+                    <!-- Pergunta 9 -->
+                    <div class="question-block">
+                        <h3 class="fonte-runas">9. O que são os Testrálios?</h3>
+                        <label id="lbl-q9-a"><input type="radio" name="q9" value="a"> Cavalos invisíveis para quem não viu a morte</label>
+                        <label><input type="radio" name="q9" value="b"> Dragões pequenos</label>
+                        <label><input type="radio" name="q9" value="c"> Guardiões de Azkaban</label>
+                    </div>
+
+                    <!-- Pergunta 10 -->
+                    <div class="question-block">
+                        <h3 class="fonte-runas">10. Qual feitiço Harry usou para respirar embaixo d'água?</h3>
+                        <label><input type="radio" name="q10" value="a"> Bubblehead</label>
+                        <label><input type="radio" name="q10" value="b"> Aquamenti</label>
+                        <label id="lbl-q10-c"><input type="radio" name="q10" value="c"> Ele comeu Guelricho (não foi feitiço)</label>
+                    </div>
+
+                    <!-- SEÇÃO DIFÍCIL -->
+                    <h2 class="fonte-runas" style="border-bottom: 1px solid #ffb700; padding-top: 20px;">Nível 3: Auror (Difícil)</h2>
+
+                    <!-- Pergunta 11 -->
+                    <div class="question-block">
+                        <h3 class="fonte-runas">11. O que cura veneno de Basilisco?</h3>
+                        <label><input type="radio" name="q11" value="a"> Bezoar</label>
+                        <label id="lbl-q11-b"><input type="radio" name="q11" value="b"> Lágrima de Fênix</label>
+                        <label><input type="radio" name="q11" value="c"> Mandrágora</label>
+                    </div>
+
+                    <!-- Pergunta 12 -->
+                    <div class="question-block">
+                        <h3 class="fonte-runas">12. Quem criou o feitiço "Sectumsempra"?</h3>
+                        <label><input type="radio" name="q12" value="a"> Voldemort</label>
+                        <label id="lbl-q12-b"><input type="radio" name="q12" value="b"> Severus Snape</label>
+                        <label><input type="radio" name="q12" value="c"> Sirius Black</label>
+                    </div>
+
+                    <!-- Pergunta 13 -->
+                    <div class="question-block">
+                        <h3 class="fonte-runas">13. Qual criatura Harry enfrenta no Torneio Tribruxo?</h3>
+                        <label id="lbl-q13-a"><input type="radio" name="q13" value="a"> Rabo-Córneo Húngaro</label>
+                        <label><input type="radio" name="q13" value="b"> Verde Galês</label>
+                        <label><input type="radio" name="q13" value="c"> Focinho-Curto Sueco</label>
+                    </div>
+
+                    <!-- Pergunta 14 -->
+                    <div class="question-block">
+                        <h3 class="fonte-runas">14. Qual a forma do Patrono de Luna Lovegood?</h3>
+                        <label><input type="radio" name="q14" value="a"> Coruja</label>
+                        <label><input type="radio" name="q14" value="b"> Gato</label>
+                        <label id="lbl-q14-c"><input type="radio" name="q14" value="c"> Lebre</label>
+                    </div>
+
+                    <!-- Pergunta 15 -->
+                    <div class="question-block">
+                        <h3 class="fonte-runas">15. O que é um Bicho-Papão (Boggart)?</h3>
+                        <label><input type="radio" name="q15" value="a"> Um fantasma</label>
+                        <label id="lbl-q15-b"><input type="radio" name="q15" value="b"> Um não-ser que assume a forma do seu medo</label>
+                        <label><input type="radio" name="q15" value="c"> Um duende doméstico</label>
+                    </div>
+
+                </form>
+                <br>
+                <button type="button" class="botao-magico" onclick="calcularResultado()">Revelar Nota</button>
+                
+                <div id="resultado" class="resultado-box" style="display:none;"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape-magico">
+        <p class="copy">&copy; 2026 HP Curiosidades & Edits. Feito com magia.</p>
+    </footer>
+
+    <!-- Biblioteca para baixar o certificado como imagem -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <!-- Biblioteca de Confetes Mágicos -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+    <script>
+        // --- Lógica do Cronômetro ---
+        let tempoRestante = 120; // 2 minutos em segundos
+        let timerInterval;
+        let quizFinalizado = false;
+
+        // --- Áudio Tic-Tac Gerado via Código (Sem arquivo mp3) ---
+        // Cria um sintetizador de áudio no navegador
+        const AudioContext = window.AudioContext || window.webkitAudioContext;
+        const audioCtx = new AudioContext();
+
+        function tocarTicTac(urgente) {
+            // Garante que o áudio está ativo (alguns navegadores bloqueiam até o primeiro clique)
+            if (audioCtx.state === 'suspended') audioCtx.resume();
+            
+            const osc = audioCtx.createOscillator();
+            const gain = audioCtx.createGain();
+            
+            osc.connect(gain);
+            gain.connect(audioCtx.destination);
+            
+            // Configura o som (Triangle wave parece um relógio mecânico antigo)
+            osc.type = 'triangle'; 
+            // Se for urgente (final do tempo), o tom é mais agudo
+            osc.frequency.setValueAtTime(urgente ? 1200 : 800, audioCtx.currentTime);
+            
+            // Configura o volume para um "bip" curto
+            gain.gain.setValueAtTime(0.1, audioCtx.currentTime);
+            gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.1);
+            
+            osc.start();
+            osc.stop(audioCtx.currentTime + 0.1);
+        }
+
+        function iniciarTimer() {
+            const display = document.getElementById('timer-flutuante');
+            
+            timerInterval = setInterval(() => {
+                if(quizFinalizado) return;
+
+                let minutos = Math.floor(tempoRestante / 60);
+                let segundos = tempoRestante % 60;
+                
+                // Formatação bonita (01:05 ao invés de 1:5)
+                minutos = minutos < 10 ? '0' + minutos : minutos;
+                segundos = segundos < 10 ? '0' + segundos : segundos;
+                
+                display.textContent = `${minutos}:${segundos}`;
+
+                // Muda cor para vermelho quando falta pouco
+                if (tempoRestante < 30) {
+                    display.style.color = '#e84118';
+                }
+
+                // --- Lógica do Som Acelerado ---
+                if (tempoRestante <= 10 && tempoRestante > 0) {
+                    // Faltando 10s: Toca duas vezes por segundo (acelerado)
+                    tocarTicTac(true); 
+                    setTimeout(() => tocarTicTac(true), 500); 
+                } else if (tempoRestante > 0) {
+                    // Normal: Toca uma vez
+                    tocarTicTac(false);
+                }
+
+                if (tempoRestante <= 0) {
+                    clearInterval(timerInterval);
+                    calcularResultado(); // Envia automaticamente
+                    alert("Tempo esgotado! Varinhas para baixo!");
+                }
+                tempoRestante--;
+            }, 1000);
+        }
+
+        function calcularResultado() {
+            if(quizFinalizado) return; // Evita calcular duas vezes
+            quizFinalizado = true;
+            clearInterval(timerInterval); // Para o relógio
+
+            const respostasCorretas = {
+                q1: 'b', q2: 'a', q3: 'b', q4: 'c', q5: 'a', // Fáceis
+                q6: 'b', q7: 'b', q8: 'b', q9: 'a', q10: 'c', // Médias
+                q11: 'b', q12: 'b', q13: 'a', q14: 'c', q15: 'b' // Difíceis
+            };
+
+            let pontuacao = 0;
+            const form = document.getElementById('quiz-form');
+            const resultadoDiv = document.getElementById('resultado');
+            const total = 15;
+
+            // Limpa estilos anteriores
+            document.querySelectorAll('label').forEach(l => l.classList.remove('correto', 'errado'));
+
+            for (let i = 1; i <= total; i++) {
+                const respostaUsuario = form['q' + i].value;
+                const nomeOpcao = 'q' + i;
+                
+                // Seleciona todos os inputs dessa pergunta
+                const opcoes = document.getElementsByName(nomeOpcao);
+                
+                opcoes.forEach(opcao => {
+                    const label = opcao.parentElement;
+                    
+                    // Se esta opção for a correta, marca de verde
+                    if (opcao.value === respostasCorretas[nomeOpcao]) {
+                         label.classList.add('correto');
+                    }
+                    
+                    // Se o usuário marcou esta opção e ela está errada, marca de vermelho
+                    if (opcao.checked && opcao.value !== respostasCorretas[nomeOpcao]) {
+                        label.classList.add('errado');
+                    }
+                });
+
+                if (respostaUsuario === respostasCorretas['q' + i]) {
+                    pontuacao++;
+                }
+            }
+
+            let mensagem = "";
+            let htmlCertificado = "";
+
+            if (pontuacao === 15) {
+                mensagem = "Excepcional (O)! Pontuação Perfeita!";
+                // Cria o HTML do Certificado
+                htmlCertificado = `
+                    <div class="certificado-box">
+                        <h2 class="certificado-titulo">Certificado de Magia</h2>
+                        <p class="certificado-texto">Certificamos que este bruxo(a) completou os N.O.M.s com distinção máxima, demonstrando conhecimento extraordinário em feitiços e criaturas mágicas.</p>
+                        <p class="fonte-antiga" style="font-size: 1.2em; margin-top: 30px;">Assinado: <em>Ministério da Magia</em></p>
+                        <p class="fonte-runas" style="font-size: 3em; color: #d4af37;">★★★★★</p>
+                        <button onclick="baixarCertificado()" class="botao-magico" style="margin-top:20px; font-size: 1em;">📜 Baixar Certificado</button>
+                    </div>
+                `;
+                // Dispara os confetes mágicos!
+                lancarConfetes();
+            }
+            else if (pontuacao >= 10) mensagem = "Excede Expectativas (E). Muito bom!";
+            else if (pontuacao >= 5) mensagem = "Aceitável (A). Continue estudando!";
+            else mensagem = "Trasgo (T). Você precisa estudar mais!";
+
+            resultadoDiv.style.display = "block";
+            resultadoDiv.innerHTML = `<h3 class="fonte-antiga">Sua Nota: ${pontuacao}/${total}</h3><p style="font-size: 1.2em;">${mensagem}</p>${htmlCertificado}`;
+            
+            // Scroll suave até o resultado
+            resultadoDiv.scrollIntoView({ behavior: 'smooth' });
+            
+            // Esconde o timer
+            document.getElementById('timer-flutuante').style.display = 'none';
+        }
+
+        // --- Função de Confetes Mágicos ---
+        function lancarConfetes() {
+            var duration = 3 * 1000;
+            var animationEnd = Date.now() + duration;
+            var defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 };
+
+            var interval = setInterval(function() {
+                var timeLeft = animationEnd - Date.now();
+
+                if (timeLeft <= 0) {
+                    return clearInterval(interval);
+                }
+
+                var particleCount = 50 * (timeLeft / duration);
+                confetti(Object.assign({}, defaults, { particleCount, origin: { x: Math.random(), y: Math.random() - 0.2 } }));
+            }, 250);
+        }
+
+        // --- Função para Baixar Certificado ---
+        function baixarCertificado() {
+            const elemento = document.querySelector(".certificado-box");
+
+            html2canvas(elemento, { 
+                backgroundColor: "#f5e6d3", // Garante a cor de fundo correta
+                scale: 2, // Melhora a qualidade da imagem
+                useCORS: true, // Ajuda a carregar fontes externas
+                onclone: (documentoClonado) => {
+                    const box = documentoClonado.querySelector(".certificado-box");
+                    const btn = box.querySelector("button");
+                    
+                    // Remove o botão e animações no clone para evitar bugs visuais na imagem
+                    if(btn) btn.style.display = 'none';
+                    box.style.animation = 'none';
+                    box.style.transform = 'none';
+
+                    // Correção: Força estilos de texto para evitar que letras fiquem umas sobre as outras
+                    const todosElementos = box.querySelectorAll('*');
+                    todosElementos.forEach(el => {
+                        el.style.fontKerning = 'none'; // Desativa ajuste automático que causa sobreposição
+                        el.style.letterSpacing = 'normal'; // Reseta espaçamento para o padrão do navegador
+                        el.style.fontVariantLigatures = 'none'; // Desliga a união de letras (comum dar erro em cursiva)
+                        el.style.textShadow = 'none'; // Remove sombras que podem duplicar o texto visualmente
+                    });
+                }
+            }).then(canvas => {
+                const link = document.createElement('a');
+                link.download = 'Certificado-Hogwarts.png';
+                link.href = canvas.toDataURL();
+                link.click();
+            });
+        }
+
+        // --- Script para Corrigir o Cabeçalho (Animação) ---
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        });
+
+        // Inicia tudo quando a página carregar
+        window.addEventListener('load', () => {
+            // Ativa animações
+            document.querySelectorAll('.anime-fade').forEach((el) => observer.observe(el));
+            // Inicia Timer
+            iniciarTimer();
+        });
+    </script>
+</body>
+</html>

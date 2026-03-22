@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grimório de Feitiços - HP Curiosidades</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Cinzel+Decorative:wght@400;700;900&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&family=IM+Fell+English+SC&family=Pinyon+Script&family=Uncial+Antiqua&family=EB+Garamond:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+</head>
+<body>
+    <header class="cabecalho anime-fade">
+        <h1>Biblioteca de Feitiços</h1>
+        <h2 class="fonte-antiga">Palavras de Poder</h2>
+        <p class="fonte-manuscrita">De simples levitações a maldições imperdoáveis, o conhecimento é poder.</p>
+        
+        <nav class="nav-rodape" style="margin-top: 20px;">
+            <a href="index.html">Início</a> • 
+            <a href="personagens.html">Personagens</a> • 
+            <a href="index.html#canais">Canais</a>
+        </nav>
+        <br>
+        <a href="index.html" class="botao-magico">Voltar para Início</a>
+    </header>
+
+    <main>
+        <section class="anime-fade visible">
+            <div class="lista-feiticos">
+                
+                <div class="feitico-item">
+                    <h3 class="feitico-nome">Expelliarmus</h3>
+                    <p class="feitico-efeito">O Feitiço de Desarmamento. Remove a varinha ou objeto da mão do oponente.</p>
+                </div>
+
+                <div class="feitico-item">
+                    <h3 class="feitico-nome">Wingardium Leviosa</h3>
+                    <p class="feitico-efeito">Faz objetos levitarem. Lembre-se: é levi-ô-sa, não levio-sá!</p>
+                </div>
+
+                <div class="feitico-item">
+                    <h3 class="feitico-nome">Expecto Patronum</h3>
+                    <p class="feitico-efeito">Conjura um guardião espiritual feito de energia positiva para repelir Dementadores.</p>
+                </div>
+
+                <div class="feitico-item">
+                    <h3 class="feitico-nome">Avada Kedavra</h3>
+                    <p class="feitico-efeito">A Maldição da Morte. Causa morte instantânea e indolor. Proibido.</p>
+                </div>
+
+                <div class="feitico-item">
+                    <h3 class="feitico-nome">Lumos / Nox</h3>
+                    <p class="feitico-efeito">Acende e apaga a ponta da varinha como uma lanterna.</p>
+                </div>
+
+                <div class="feitico-item">
+                    <h3 class="feitico-nome">Accio</h3>
+                    <p class="feitico-efeito">Feitiço Convocatório. Atrai objetos distantes para o bruxo.</p>
+                </div>
+
+                <div class="feitico-item">
+                    <h3 class="feitico-nome">Alohomora</h3>
+                    <p class="feitico-efeito">Destranca portas e janelas trancadas magicamente (ou não).</p>
+                </div>
+
+                <div class="feitico-item">
+                    <h3 class="feitico-nome">Sectumsempra</h3>
+                    <p class="feitico-efeito">Cria cortes profundos no alvo como se fosse uma espada invisível. Criado pelo Príncipe Mestiço.</p>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape-magico">
+        <p class="copy">&copy; 2026 HP Curiosidades & Edits. Feito com magia.</p>
+    </footer>
+
+    <script>
+        // Script de Animação (Para corrigir o cabeçalho)
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        });
+        document.querySelectorAll('.anime-fade').forEach((el) => observer.observe(el));
+    </script>
+</body>
+</html>
